@@ -24,7 +24,14 @@ namespace AM_1
                 IconSource = "fox.png",
                 TargetType = typeof(HomePage)
             });
-            
+
+            masterPageItem.Add(new MasterPageItem
+            {
+                Title = "PerfilPage",
+                IconSource = "person.png",
+                TargetType = typeof(PerfilPage)
+            });
+
             masterPageItem.Add(new MasterPageItem
             {
                 //Quienes somos

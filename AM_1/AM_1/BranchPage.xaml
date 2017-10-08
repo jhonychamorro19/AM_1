@@ -5,7 +5,7 @@
              Title="Sucursales">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Sucursales" />
+            <Label Text="Sucursales!" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
