@@ -2,10 +2,58 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AM_1.ContactPage"
-             Title="Contactos">
+             Title="CONTACTENOS">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Contactos!" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="0">
+                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+                    <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+                        <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Label FontSize="20" TextColor="DarkGreen" Text="CONTÁCTANOS" VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Padding="10">
+                    <Entry Placeholder="Nombres"/>
+                    <Entry Placeholder="Correo electronico"/>
+
+                    <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                        <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
+                            <Entry Placeholder="Celular" WidthRequest="150" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Entry Placeholder="Telefono" WidthRequest="150" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5">
+                        <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
+                            <Entry Placeholder="Empresa" WidthRequest="200" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                            <Entry Placeholder="Cargo" WidthRequest="100" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Label Text="Deja su comentario o sugerencia"></Label>
+                    <Editor BackgroundColor="White" Completed="Editor_Completed"/>
+
+                    <StackLayout Orientation="Horizontal" HeightRequest="60" Margin="10" Padding="5">
+                        <Image Source="clock.png" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Label Text="Horario de atencion &#10;Oficinas Administrativas &#10;Lunes a Viernes: 8:00 am a 6:00" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal" HeightRequest="60" Margin="10" Padding="5">
+                        <Image Source="gps.png" WidthRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Label Text="Ubicanos &#10;Jr. Francisco Carlé #234 &#10;Jauja" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    </StackLayout>
+  
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="10">
+                        <Button Text="Enviar"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -4,8 +4,20 @@
              x:Class="AM_1.ProductsPage"
              Title="Productos">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Productos!" />
-        </StackLayout>
+        <ListView x:Name="listView" RowHeight="50">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Image Source="{Binding Image}" AbsoluteLayout.LayoutBounds="250.25, 0.25, 50, 50"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40"/>
+                                <Label Text="{Binding Typed}" AbsoluteLayout.LayoutBounds="50, 55, 200, 25"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

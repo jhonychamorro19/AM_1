@@ -37,7 +37,7 @@
 
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
                     <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
-                        <Image Source="fox.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                         <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>

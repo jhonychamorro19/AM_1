@@ -16,5 +16,10 @@ namespace AM_1
         {
             InitializeComponent();
         }
+
+        private void Editor_Completed(object sender, EventArgs e)
+        {
+
+        }
     }
 }
