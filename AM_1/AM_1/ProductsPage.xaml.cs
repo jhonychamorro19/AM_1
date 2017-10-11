@@ -22,55 +22,55 @@ namespace AM_1
             elements = new ObservableCollection<Productos>();
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Cloruro Blano",
                 Type = "Generico"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Cloruro de Potasio",
                 Type = "Generico"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Fosfato",
                 Type = "Generico"
             });
             elements.Add(new Productos
             {
-                Image = "urea.png",
+                Image = "garden.png",
                 Name = "Molimax",
                 Type = "Mezcla"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Molimax para Café",
                 Type = "Mezcla"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Molimax para Maiz",
                 Type = "Mezcla"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Acido Fosforico",
                 Type = "Solubles"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Nitrato de Calcio",
                 Type = "Solubles"
             });
             elements.Add(new Productos
             {
-                Image = "icon.png",
+                Image = "garden.png",
                 Name = "Sulfato de Zinc",
                 Type = "Solubles"
             });
