@@ -35,16 +35,18 @@
         <ScrollView>
             <StackLayout Spacing="10" Padding="0" BackgroundColor="LightSkyBlue">
 
-                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+                <StackLayout Orientation="Horizontal" HeightRequest="45" BackgroundColor="White" Padding="5">
                     <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
                         <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                         <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
+                        <Image Source="logo.png" BackgroundColor="Black" HeightRequest="40" HorizontalOptions="End" VerticalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                
+
+                <SearchBar Text="Buscar" Placeholder="Busqueda"/>
                 <Image Source="fox.png" HeightRequest="60" WidthRequest="60"
                         HorizontalOptions="Center" VerticalOptions="Start"/>
-                
+
 
                 <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Maroon">
                     <Label Text="Nombre de Usuario" FontSize="29" HorizontalOptions="Center"
@@ -65,7 +67,7 @@
                     </StackLayout>
 
                 </StackLayout>
-                
+
 
                 <StackLayout Orientation="Horizontal">
                     <Label FontSize="14" Text="Edad : " TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
@@ -83,7 +85,11 @@
                            HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
                     <Entry HorizontalOptions="FillAndExpand" Text="xamarin, C# ..." TextColor="White" BackgroundColor="Green"/>
                 </StackLayout>
-                
+
+                <StackLayout>
+                    <Label Text="Este puede ser un footer¿?"/>
+                </StackLayout>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
