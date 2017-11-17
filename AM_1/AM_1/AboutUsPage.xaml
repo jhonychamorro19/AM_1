@@ -4,8 +4,26 @@
              x:Class="AM_1.AboutUsPage"
              Title="Quienes Somos">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Quienes Somos!" />
+        <StackLayout Spacing="10" Padding="0" BackgroundColor="DarkSeaGreen">
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="30" Padding="10">
+                <StackLayout Spacing="10" HorizontalOptions="Start" Orientation="Horizontal">
+                    <Image Source="logo.png" WidthRequest="40" HeightRequest="40" />
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
+
+    <!--
+     <StackLayout Orientation="Horizontal" HeightRequest="30" BackgroundColor="White" Padding="3">
+        <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
+            <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+            <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaris" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+            <Image Source="home.png" HeightRequest="25" VerticalOptions="FillAndExpand"/>
+            <Image Source="person1.png" HeightRequest="30" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+        </StackLayout>
+        -->
+
 </ContentPage>

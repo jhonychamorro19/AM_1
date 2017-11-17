@@ -33,25 +33,29 @@
 
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="10" Padding="0" BackgroundColor="LightSkyBlue">
+            <StackLayout Spacing="10" Padding="0" BackgroundColor="DarkSeaGreen">
 
-                <StackLayout Orientation="Horizontal" HeightRequest="45" BackgroundColor="White" Padding="5">
-                    <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+                <StackLayout Orientation="Horizontal" HeightRequest="30" BackgroundColor="White" Padding="3">
+                    <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
                         <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-                        <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
-                        <Image Source="logo.png" BackgroundColor="Black" HeightRequest="40" HorizontalOptions="End" VerticalOptions="Center"/>
+                        <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaris" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                        <Image Source="home.png" HeightRequest="25" VerticalOptions="FillAndExpand"/>
+                        <Image Source="person1.png" HeightRequest="30" VerticalOptions="FillAndExpand"/>
                     </StackLayout>
                 </StackLayout>
-
-                <SearchBar Text="Buscar" Placeholder="Busqueda"/>
+                
+                    <SearchBar Text="Buscar" Placeholder="Busqueda"/>
+                
                 <Image Source="fox.png" HeightRequest="60" WidthRequest="60"
                         HorizontalOptions="Center" VerticalOptions="Start"/>
 
 
-                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Maroon">
+                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20">
                     <Label Text="Nombre de Usuario" FontSize="29" HorizontalOptions="Center"
-                           VerticalOptions="Center" FontAttributes="Bold"/>
-                    <Entry Text="Biograia y etiquetas" TextColor="White"
+                           VerticalOptions="Center" FontAttributes="Bold" TextColor="DarkGreen"/>
+                    <Entry Text="Biograia y etiquetas" TextColor="DarkGreen"
                            HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
                 </StackLayout>
 
@@ -86,8 +90,8 @@
                     <Entry HorizontalOptions="FillAndExpand" Text="xamarin, C# ..." TextColor="White" BackgroundColor="Green"/>
                 </StackLayout>
 
-                <StackLayout>
-                    <Label Text="Este puede ser un footer¿?"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="100" Padding="5">
+                    <Label Text="Este puede ser un footer¿?" TextColor="Black"/>
                 </StackLayout>
 
             </StackLayout>

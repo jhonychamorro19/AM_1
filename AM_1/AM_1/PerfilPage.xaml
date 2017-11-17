@@ -1,24 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AM_1.PerfilPage">
+             x:Class="AM_1.PerfilPage"
+             Title="Pagina Principal">
     <ContentPage.Content>
-        <ScrollView>
+       <!--<ScrollView>
             <StackLayout>
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
-                <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
-                    <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-                    <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
+                    <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+                        <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
-            
-            <Image Source="person1.png" HeightRequest="60" WidthRequest="60"
+
+                <Image Source="person1.png" HeightRequest="60" WidthRequest="60"
                     BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Start" />
                 <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Maroon">
                     <Label Text="User Name" FontSize="28" HorizontalOptions="Center"
-            VerticalOptions="Center" FontAttributes="Bold" />
+                           VerticalOptions="Center" FontAttributes="Bold" />
                     <Entry Text="Bio + Hashtags" TextColor="White"
-            BackgroundColor="Maroon" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                           BackgroundColor="Maroon" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
                     <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
@@ -45,7 +46,57 @@
                     <Entry HorizontalOptions="FillAndExpand" Text="Xamarin, C#, .NET, Mono..." TextColor="White" BackgroundColor="Maroon" />
                 </StackLayout>
             </StackLayout>
-        </ScrollView>
+        </ScrollView> 
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label  Text = "!Aprovecha la oferta¡"
+                    VerticalOptions="Center"
+                    FontSize="49"
+                    TextColor="DarkGreen"                    
+                    BackgroundColor="Azure"
+                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+
+            <Label  Text = "Ver mas ->"
+                    VerticalOptions="Center"
+                    FontSize="25"
+                    TextColor="DarkGreen"
+                    BackgroundColor="WhiteSmoke"                   
+                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" />
+
+            <Button BackgroundColor="DarkGreen" Text ="Producto 1" Grid.Row="2" Grid.Column="0"/>
+            <Button BackgroundColor="DarkGreen" Text ="Producto 2" Grid.Row="2" Grid.Column="1"/>
+            <Button BackgroundColor="DarkGreen" Text ="Producto 3" Grid.Row="2" Grid.Column="2"/>
+            <Image Source="clock.png" Grid.Row="2" Grid.Column="3"/>
+
+            <Button BackgroundColor="DarkGreen" Text ="Producto 4" Grid.Row="3" Grid.Column="0"/>
+            <Button BackgroundColor="DarkGreen" Text ="Producto 5" Grid.Row="3" Grid.Column="1"/>
+            <Button BackgroundColor="DarkGreen" Text ="Producto 5" Grid.Row="3" Grid.Column="2"/>
+            <Image Source="clock.png" Grid.Row="3" Grid.Column="3"/>
+
+            <Button BackgroundColor="DarkGreen" Text ="Producto 6" Grid.Row="4" Grid.Column="0"/>
+            <Button BackgroundColor="DarkGreen" Text ="Producto 7" Grid.Row="4" Grid.Column="1"/>
+            <Button BackgroundColor="DarkGreen" Text ="8" Grid.Row="4" Grid.Column="2"/>
+            <Image Source="clock.png" Grid.Row="4" Grid.Column="3"/>
+        </Grid> -->
+        <Label Text="Hola bitch"/>
+        
+        
+        
     </ContentPage.Content>
 
 </ContentPage>
