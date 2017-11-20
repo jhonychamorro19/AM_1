@@ -4,50 +4,72 @@
              x:Class="AM_1.PerfilPage"
              Title="Pagina Principal">
     <ContentPage.Content>
-       <!--<ScrollView>
-            <StackLayout>
-                <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
-                    <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="0" BackgroundColor="DarkSeaGreen">
+
+                <StackLayout Orientation="Horizontal" HeightRequest="30" BackgroundColor="White" Padding="3">
+                    <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
                         <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                         <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" VerticalOptions="Center"/>
                     </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                        <Image Source="home.png" HeightRequest="25" VerticalOptions="FillAndExpand"/>
+                        <Image Source="person1.png" HeightRequest="30" VerticalOptions="FillAndExpand"/>
+                    </StackLayout>
                 </StackLayout>
 
-                <Image Source="person1.png" HeightRequest="60" WidthRequest="60"
-                    BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Start" />
-                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Maroon">
-                    <Label Text="User Name" FontSize="28" HorizontalOptions="Center"
-                           VerticalOptions="Center" FontAttributes="Bold" />
-                    <Entry Text="Bio + Hashtags" TextColor="White"
-                           BackgroundColor="Maroon" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                <SearchBar Text="Buscar" Placeholder="Busqueda"/>
+
+                <Image Source="fox.png" HeightRequest="60" WidthRequest="60"
+                        HorizontalOptions="Center" VerticalOptions="Start"/>
+
+
+                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20">
+                    <Label Text="Nombre de Usuario" FontSize="29" HorizontalOptions="Center"
+                           VerticalOptions="Center" FontAttributes="Bold" TextColor="DarkGreen"/>
+                    <Entry Text="Biograia y etiquetas" TextColor="DarkGreen"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
                 </StackLayout>
+
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
                     <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
                         <BoxView BackgroundColor="Black" WidthRequest="40" HeightRequest="40"  HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                         <Label FontSize="14" TextColor="Black" Text="Accent Color" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                     </StackLayout>
+
                     <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                        <BoxView BackgroundColor="Maroon" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
-                        <Label FontSize="14" TextColor="Black" Text="Primary Color" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                        <BoxView BackgroundColor="Maroon" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label FontSize="14" TextColor="Black" Text="Color Primario" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
                     </StackLayout>
+
                 </StackLayout>
+
+
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Age:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
-                    <Entry HorizontalOptions="FillAndExpand" Text="35" TextColor="White" BackgroundColor="Maroon" />
+                    <Label FontSize="14" Text="Edad : " TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+                    <Entry HorizontalOptions="FillAndExpand" Text="35" TextColor="White" BackgroundColor="Green"/>
                 </StackLayout>
+
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Interests:" TextColor="White"
+                    <Label FontSize="14" Text="Interests:" TextColor="Black"
                             HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
                     <Entry HorizontalOptions="FillAndExpand" Text="Xamarin.Forms" TextColor="White" BackgroundColor="Maroon" />
                 </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Ask me about:" TextColor="White"
-                            HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
-                    <Entry HorizontalOptions="FillAndExpand" Text="Xamarin, C#, .NET, Mono..." TextColor="White" BackgroundColor="Maroon" />
-                </StackLayout>
-            </StackLayout>
-        </ScrollView> 
 
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="14" Text="Acerce de mi: " TextColor="Black"
+                           HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+                    <Entry HorizontalOptions="FillAndExpand" Text="xamarin, C# ..." TextColor="White" BackgroundColor="Green"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="100" Padding="5">
+                    <Label Text="Este puede ser un footer¿?" TextColor="Black"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    
+    <!--  
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -63,7 +85,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Label  Text = "!Aprovecha la oferta¡"
                     VerticalOptions="Center"
                     FontSize="49"
@@ -92,11 +114,13 @@
             <Button BackgroundColor="DarkGreen" Text ="Producto 7" Grid.Row="4" Grid.Column="1"/>
             <Button BackgroundColor="DarkGreen" Text ="8" Grid.Row="4" Grid.Column="2"/>
             <Image Source="clock.png" Grid.Row="4" Grid.Column="3"/>
-        </Grid> -->
-        <Label Text="Hola bitch"/>
+        </Grid>
         
+          <Label Text="Hola bitch"/> -->
         
-        
+
+
+
     </ContentPage.Content>
 
 </ContentPage>
