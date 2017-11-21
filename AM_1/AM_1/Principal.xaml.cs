@@ -44,7 +44,7 @@ namespace AM_1
             });
             lista.Add(new Datos
             {
-                img = "campo3.gif",
+                img = "campo4.gif",
                 texto = "Holi"
             });
 

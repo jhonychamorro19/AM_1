@@ -4,52 +4,82 @@
              x:Class="AM_1.HomePage"
              Title="Pagina Principal"
              xmlns:control="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView">
-
     <ContentPage.Content>
-        <StackLayout x:Name="layout">
-<!--
+        <ScrollView>
+            <StackLayout x:Name="layout">
                 <StackLayout Orientation="Horizontal" HeightRequest="30" BackgroundColor="White" Padding="3">
                     <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
-                        <Image Source="logo.png" WidthRequest="40" HeightRequest="40" 
-                               HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-                        <Label FontSize="20" TextColor="DarkGreen" Text="Agropecuaria" 
-                               VerticalOptions="Center"/>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                        <Image Source="home.png" HeightRequest="25" VerticalOptions="FillAndExpand"/>
-                        <Image Source="person1.png" HeightRequest="30" VerticalOptions="FillAndExpand"/>
+                        <Image Source="logo.png" WidthRequest="30" HeightRequest="30"
+                           HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Label Text="Agropecuaria" TextColor="DarkGreen" FontSize="20"
+                           VerticalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
--->
-                <StackLayout x:Name="stackPrinc" Orientation="Vertical">
-                    <Label Text="Parte de ariba"/>
+                <StackLayout>
+                    <SearchBar Placeholder="Buscar" BackgroundColor="Green"/>
+                </StackLayout>
+                <!--carousel view-->
+                <StackLayout x:Name="stackPrinc">
                     <control:CarouselView x:Name="car" VerticalOptions="Start" HeightRequest="240">
                         <control:CarouselView.ItemTemplate>
                             <DataTemplate>
-                            <StackLayout Orientation="Vertical">
-                                <Image Aspect="AspectFill" Source="{Binding img}"/>
-                                <Label Text="{Binding texto}"/>
-                            </StackLayout>
-                        </DataTemplate>
+                                <StackLayout Orientation="Vertical">
+                                    <Image Aspect="AspectFill" Source="{Binding img}"/>
+                                    <Label Text="{Binding texto}"/>
+                                </StackLayout>
+                            </DataTemplate>
                         </control:CarouselView.ItemTemplate>
                     </control:CarouselView>
+                </StackLayout>
+               
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Parte de abajo"/>
 
+                    <StackLayout Grid.Row="0" Grid.ColumnSpan="4" Spacing="5">
+                        <Label Text="Aprovecha lo mejor en ..." FontSize="15"
+                               BackgroundColor="DarkGreen"/>
+                    </StackLayout>
+
+                    <Button Text="oferta 1" Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="oferta 2" Grid.Row="1" Grid.Column="1"/>
+                    <Button Text="oferta 3" Grid.Row="1" Grid.Column="2"/>
+                    <Button Text="oferta 4" Grid.Row="1" Grid.Column="3"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="4" Spacing="5" Padding="5">
+                        <Label Text="Aprovecha otras promociones" FontSize="15"
+                               BackgroundColor="ForestGreen"/>
+                    </StackLayout>
+
+                    <Button Text="oferta 5" Grid.Row="3" Grid.Column="0"/>
+                    <Button Text="oferta 6" Grid.Row="3" Grid.Column="1"/>
+                    <Button Text="oferta 7" Grid.Row="3" Grid.Column="2"/>
+                    <Button Text="oferta 8" Grid.Row="3" Grid.Column="3"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="4" Spacing="5" Padding="5">
+                        <Label Text="Aprovecha otras promociones" FontSize="15" 
+                               BackgroundColor="DarkSeaGreen" />
+                    </StackLayout>
+
+                    <Button Text="oferta 5" Grid.Row="5" Grid.Column="0"/>
+                    <Button Text="oferta 6" Grid.Row="5" Grid.Column="1"/>
+                    <Button Text="oferta 7" Grid.Row="5" Grid.Column="2"/>
+                    <Button Text="oferta 8" Grid.Row="5" Grid.Column="3"/>
+                </Grid>
             </StackLayout>
-
- <!--
-            <BoxView 
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand" 
-                    BackgroundColor="Yellow"/>
-                
-            <BoxView 
-                    HeightRequest="75" 
-                    VerticalOptions="End"
-                    HorizontalOptions="FillAndExpand" 
-                    BackgroundColor="Red" />
--->
-            </StackLayout>
-        </ContentPage.Content>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

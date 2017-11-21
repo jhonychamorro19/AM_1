@@ -6,7 +6,6 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="10" Padding="0" BackgroundColor="DarkSeaGreen">
-
                 <StackLayout Orientation="Horizontal" HeightRequest="30" BackgroundColor="White" Padding="3">
                     <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start">
                         <Image Source="logo.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
@@ -68,8 +67,7 @@
 
             </StackLayout>
         </ScrollView>
-    
-    <!--  
+        <!--  
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -116,11 +114,7 @@
             <Image Source="clock.png" Grid.Row="4" Grid.Column="3"/>
         </Grid>
         
-          <Label Text="Hola bitch"/> -->
-        
-
-
-
+          <Label Text="Hola bitch"/> -->       
     </ContentPage.Content>
 
 </ContentPage>
